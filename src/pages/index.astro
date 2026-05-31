@@ -33,7 +33,7 @@ import Nav from '../components/Nav.astro'
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.44.0/dist/tabler-icons.min.css" />
   </head>
   <body class="bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 font-sans transition-colors">
     <!-- Scroll progress bar -->
@@ -57,7 +57,7 @@ import Nav from '../components/Nav.astro'
     <!-- About -->
     <section id="about" class="border-t border-stone-200 dark:border-stone-800">
       <div class="reveal max-w-[860px] mx-auto px-6 md:px-8 py-16 pb-20 border-b border-stone-200 dark:border-stone-800">
-        <p class="font-mono text-[10px] tracking-[0.18em] uppercase text-amber-700 dark:text-amber-500 mb-10">About</p>
+        <p class="section-label">About</p>
         <div class="grid md:grid-cols-2 gap-16">
           <div>
             <h2 class="font-display text-[34px] font-normal leading-[1.2] text-stone-900 dark:text-stone-100">
@@ -79,7 +79,7 @@ import Nav from '../components/Nav.astro'
     <!-- Experience & Education -->
     <section id="experience" class="border-t border-stone-200 dark:border-stone-800">
       <div class="reveal max-w-[860px] mx-auto px-6 md:px-8 py-16 pb-20 border-b border-stone-200 dark:border-stone-800">
-        <p class="font-mono text-[10px] tracking-[0.18em] uppercase text-amber-700 dark:text-amber-500 mb-10">Experience &amp; Education</p>
+        <p class="section-label">Experience &amp; Education</p>
         <div class="grid md:grid-cols-2 gap-12 md:gap-16">
 
           <!-- Work -->
@@ -129,11 +129,11 @@ import Nav from '../components/Nav.astro'
                 <p class="text-[15px] text-stone-800 dark:text-stone-200 font-semibold leading-snug mb-1.5">Bachelor of Computing (Hons.)</p>
                 <p class="text-[14px] text-stone-500 dark:text-stone-400 leading-[1.65] mb-5">Specialization in Software Design, Computer Science</p>
                 <div class="flex gap-1.5 flex-wrap">
-                  <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Java</span>
-                  <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Python</span>
-                  <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">SQL</span>
-                  <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">C / C++</span>
-                  <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">TypeScript</span>
+                  <span class="tech-pill">Java</span>
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">SQL</span>
+                  <span class="tech-pill">C / C++</span>
+                  <span class="tech-pill">TypeScript</span>
                 </div>
               </div>
             </div>
@@ -146,7 +146,7 @@ import Nav from '../components/Nav.astro'
     <!-- Projects -->
     <section id="projects">
       <div class="reveal max-w-[860px] mx-auto px-6 md:px-8 py-16 pb-20 border-b border-stone-200 dark:border-stone-800">
-        <p class="font-mono text-[10px] tracking-[0.18em] uppercase text-amber-700 dark:text-amber-500 mb-10">Selected projects</p>
+        <p class="section-label">Selected projects</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
           <!-- Infrastructure — full-width featured card -->
@@ -167,14 +167,14 @@ import Nav from '../components/Nav.astro'
             </div>
             <div class="flex justify-between items-center mt-auto pt-2">
               <div class="flex gap-1.5 flex-wrap">
-                <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Docker</span>
-                <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Linux</span>
-                <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Oracle Cloud</span>
-                <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Cloudflare</span>
-                <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Bash</span>
-                <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Networking</span>
-                <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Monitoring</span>
-                <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">DevOps</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">Linux</span>
+                <span class="tech-pill">Oracle Cloud</span>
+                <span class="tech-pill">Cloudflare</span>
+                <span class="tech-pill">Bash</span>
+                <span class="tech-pill">Networking</span>
+                <span class="tech-pill">Monitoring</span>
+                <span class="tech-pill">DevOps</span>
               </div>
               <i class="ti ti-server text-lg text-stone-300 dark:text-stone-600"></i>
             </div>
@@ -189,12 +189,12 @@ import Nav from '../components/Nav.astro'
             </p>
             <div class="flex justify-between items-center">
               <div class="flex gap-1.5 flex-wrap">
-                <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">YOLO12</span>
-                <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Next.js</span>
-                <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">React</span>
-                <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Azure</span>
+                <span class="tech-pill">YOLO12</span>
+                <span class="tech-pill">Next.js</span>
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Azure</span>
               </div>
-              <i class="ti ti-external-link text-lg text-stone-300 dark:text-stone-600"></i>
+              <i class="ti ti-eye text-lg text-stone-300 dark:text-stone-600"></i>
             </div>
           </article>
 
@@ -207,7 +207,7 @@ import Nav from '../components/Nav.astro'
             </p>
             <div class="flex justify-between items-center">
               <div class="flex gap-1.5 flex-wrap">
-                <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Queen's University</span>
+                <span class="tech-pill">Queen's University</span>
               </div>
               <i class="ti ti-trophy text-lg text-stone-300 dark:text-stone-600"></i>
             </div>
@@ -219,16 +219,16 @@ import Nav from '../components/Nav.astro'
               <span class="font-mono text-[10px] tracking-[0.14em] uppercase text-amber-700 dark:text-amber-500 mb-5">Desktop · CV</span>
               <h3 class="font-display text-[22px] font-medium text-stone-900 dark:text-stone-100 leading-[1.25] mb-3">CleanShare</h3>
               <p class="text-[15px] text-stone-600 dark:text-stone-400 leading-[1.7] mb-6 flex-1">
-                Privacy-first desktop app that detects and blurs alcoholic beverages in photos before sharing. Fully offline, modular redaction pipeline — swap in any model for faces, plates, or custom classes — plus manual paint/erase tools with undo/redo. Sub-10s on 1080p.
+                Privacy-first desktop app that detects and blurs unauthorized items in photos before sharing. Fully offline, modular redaction pipeline — swap in any model for faces, plates, or custom classes — plus manual paint/erase tools with undo/redo. Sub-10s on 1080p.
               </p>
               <div class="flex justify-between items-center">
                 <div class="flex gap-1.5 flex-wrap">
-                  <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">C++17</span>
-                  <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Qt 6</span>
-                  <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">OpenCV</span>
-                  <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">ONNX</span>
+                  <span class="tech-pill">C++17</span>
+                  <span class="tech-pill">Qt 6</span>
+                  <span class="tech-pill">OpenCV</span>
+                  <span class="tech-pill">ONNX</span>
                 </div>
-                <i class="ti ti-external-link text-lg text-stone-300 dark:text-stone-600"></i>
+                <i class="ti ti-shield text-lg text-stone-300 dark:text-stone-600"></i>
               </div>
             </article>
 
@@ -240,11 +240,11 @@ import Nav from '../components/Nav.astro'
               </p>
               <div class="flex justify-between items-center">
                 <div class="flex gap-1.5 flex-wrap">
-                  <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">PHP</span>
-                  <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">MySQL</span>
-                  <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">XAMPP</span>
+                  <span class="tech-pill">PHP</span>
+                  <span class="tech-pill">MySQL</span>
+                  <span class="tech-pill">XAMPP</span>
                 </div>
-                <i class="ti ti-external-link text-lg text-stone-300 dark:text-stone-600"></i>
+                <i class="ti ti-calendar-event text-lg text-stone-300 dark:text-stone-600"></i>
               </div>
             </article>
 
@@ -256,10 +256,10 @@ import Nav from '../components/Nav.astro'
               </p>
               <div class="flex justify-between items-center">
                 <div class="flex gap-1.5 flex-wrap">
-                  <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Figma</span>
-                  <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">User Testing</span>
+                  <span class="tech-pill">Figma</span>
+                  <span class="tech-pill">User Testing</span>
                 </div>
-                <i class="ti ti-external-link text-lg text-stone-300 dark:text-stone-600"></i>
+                <i class="ti ti-receipt text-lg text-stone-300 dark:text-stone-600"></i>
               </div>
             </article>
 
@@ -271,8 +271,8 @@ import Nav from '../components/Nav.astro'
               </p>
               <div class="flex justify-between items-center">
                 <div class="flex gap-1.5 flex-wrap">
-                  <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Astro</span>
-                  <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Tailwind v4</span>
+                  <span class="tech-pill">Astro</span>
+                  <span class="tech-pill">Tailwind v4</span>
                 </div>
                 <div class="flex items-center gap-3">
                   <a href="https://github.com/AnthonyGrecu/portfolio" class="text-stone-300 dark:text-stone-600 hover:text-amber-700 dark:hover:text-amber-500 transition-colors" aria-label="Source code"><i class="ti ti-brand-github text-lg"></i></a>
@@ -284,7 +284,8 @@ import Nav from '../components/Nav.astro'
 
           <div class="md:col-span-2 flex justify-center pt-4">
             <button id="projects-toggle" class="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.08em] uppercase text-stone-400 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 transition-colors cursor-pointer">
-              View more projects <i id="projects-toggle-icon" class="ti ti-chevron-down text-base"></i>
+              <span id="projects-toggle-label">View more projects</span>
+              <i id="projects-toggle-icon" class="ti ti-chevron-down text-base"></i>
             </button>
           </div>
 
@@ -295,7 +296,7 @@ import Nav from '../components/Nav.astro'
     <!-- Contact -->
     <section id="contact">
       <div class="reveal max-w-[860px] mx-auto px-6 md:px-8 py-16">
-        <p class="font-mono text-[10px] tracking-[0.18em] uppercase text-amber-700 dark:text-amber-500 mb-10">Contact</p>
+        <p class="section-label">Contact</p>
         <div class="grid md:grid-cols-2 gap-16">
           <div>
             <h2 class="font-display text-[38px] font-normal leading-[1.2] text-stone-900 dark:text-stone-100 mb-4">Reach <span class="italic">out</span></h2>
@@ -345,11 +346,14 @@ import Nav from '../components/Nav.astro'
     </footer>
 
     <script>
-      // Scroll progress bar
+      // Scroll progress bar — cache total, recompute only on resize
       const bar = document.getElementById('scroll-bar');
+      let scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+      window.addEventListener('resize', () => {
+        scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+      }, { passive: true });
       window.addEventListener('scroll', () => {
-        const total = document.documentElement.scrollHeight - window.innerHeight;
-        bar.style.width = (window.scrollY / total * 100) + '%';
+        bar.style.width = (window.scrollY / scrollTotal * 100) + '%';
       }, { passive: true });
 
       // Scroll-triggered section reveals
@@ -379,20 +383,15 @@ import Nav from '../components/Nav.astro'
 
       // View more toggle
       const toggle = document.getElementById('projects-toggle');
+      const label = document.getElementById('projects-toggle-label');
       const icon = document.getElementById('projects-toggle-icon');
       const more = document.getElementById('more-projects');
 
       toggle?.addEventListener('click', () => {
-        const isHidden = more.className === 'hidden';
-        if (isHidden) {
-          more.className = 'contents';
-          toggle.childNodes[0].textContent = 'Show less ';
-          icon.className = 'ti ti-chevron-up text-base';
-        } else {
-          more.className = 'hidden';
-          toggle.childNodes[0].textContent = 'View more projects ';
-          icon.className = 'ti ti-chevron-down text-base';
-        }
+        const hidden = more.classList.toggle('hidden');
+        more.classList.toggle('contents', !hidden);
+        label.textContent = hidden ? 'View more projects' : 'Show less';
+        icon.className = `ti ${hidden ? 'ti-chevron-down' : 'ti-chevron-up'} text-base`;
       });
     </script>
   </body>

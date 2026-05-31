@@ -53,9 +53,17 @@
   }
 }
 
+.section-label {
+  @apply font-mono text-[10px] tracking-[0.18em] uppercase text-amber-700 dark:text-amber-500 mb-10;
+}
+
+.tech-pill {
+  @apply font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800;
+}
+
 .copy-btn.copied {
-  color: #b45309;
+  color: var(--color-amber-700);
 }
 .dark .copy-btn.copied {
-  color: #d97706;
+  color: var(--color-amber-600);
 }
