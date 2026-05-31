@@ -9,6 +9,17 @@ import Nav from '../components/Nav.astro'
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Anthony Grecu — CS student at Queen's University and EPM Solution Analyst at Metrolinx." />
     <title>Anthony Grecu</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://grecua.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://grecua.com" />
+    <meta property="og:title" content="Anthony Grecu" />
+    <meta property="og:description" content="Computer Science student at Queen's University. EPM Solution Analyst at Metrolinx. Building thoughtful software." />
+    <meta property="og:image" content="https://grecua.com/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Anthony Grecu" />
+    <meta name="twitter:description" content="Computer Science student at Queen's University. EPM Solution Analyst at Metrolinx." />
+    <meta name="twitter:image" content="https://grecua.com/og-image.svg" />
     <!-- Prevent flash of wrong theme before first paint -->
     <script is:inline>
       (function () {
@@ -89,13 +100,14 @@ import Nav from '../components/Nav.astro'
                     <p class="text-[15px] text-stone-800 dark:text-stone-200 font-semibold leading-snug">EPM Solutions Analyst</p>
                     <span class="font-mono text-[10px] text-amber-700 dark:text-amber-500 whitespace-nowrap pt-[3px]">May 2026 – Present</span>
                   </div>
-                  <p class="text-[14px] text-stone-500 dark:text-stone-400 leading-[1.65]">Development and testing of the OneStream EPM software project across ERP systems.</p>
+                  <p class="text-[14px] text-stone-500 dark:text-stone-400 leading-[1.65]">Full-time 12-month co-op — taking on greater ownership of development and testing across the OneStream EPM platform and ERP systems.</p>
                 </div>
                 <div>
-                  <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start justify-between gap-3 mb-1.5">
                     <p class="text-[15px] text-stone-800 dark:text-stone-200 font-semibold leading-snug">Junior EPM Solutions Analyst</p>
                     <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 whitespace-nowrap pt-[3px]">Feb 2025 – May 2026</span>
                   </div>
+                  <p class="text-[14px] text-stone-500 dark:text-stone-400 leading-[1.65]">Joined full-time over the summer, then continued part-time through the school year — contributing to release cycles and ongoing development of the OneStream EPM platform.</p>
                 </div>
               </div>
             </div>
@@ -262,7 +274,10 @@ import Nav from '../components/Nav.astro'
                   <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Astro</span>
                   <span class="font-mono text-[10px] text-stone-400 dark:text-stone-500 border border-stone-200 dark:border-stone-700 rounded-sm px-2 py-0.5 bg-white dark:bg-stone-800">Tailwind v4</span>
                 </div>
-                <a href="https://grecua.com" class="text-stone-300 dark:text-stone-600 hover:text-amber-700 dark:hover:text-amber-500 transition-colors"><i class="ti ti-external-link text-lg"></i></a>
+                <div class="flex items-center gap-3">
+                  <a href="https://github.com/AnthonyGrecu/portfolio" class="text-stone-300 dark:text-stone-600 hover:text-amber-700 dark:hover:text-amber-500 transition-colors" aria-label="Source code"><i class="ti ti-brand-github text-lg"></i></a>
+                  <a href="https://grecua.com" class="text-stone-300 dark:text-stone-600 hover:text-amber-700 dark:hover:text-amber-500 transition-colors" aria-label="Live site"><i class="ti ti-external-link text-lg"></i></a>
+                </div>
               </div>
             </article>
           </div>

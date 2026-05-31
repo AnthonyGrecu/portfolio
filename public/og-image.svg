@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=IBM+Plex+Mono:wght@400&display=swap');
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0c0a09"/>
+
+  <!-- Amber accent line -->
+  <rect x="80" y="104" width="36" height="2" fill="#b45309"/>
+
+  <!-- Eyebrow tag -->
+  <text
+    x="80" y="208"
+    font-family="'IBM Plex Mono', 'Courier New', monospace"
+    font-size="15"
+    fill="#78716c"
+    letter-spacing="3"
+  >CS STUDENT &amp; EPM ANALYST</text>
+
+  <!-- Name -->
+  <text
+    x="80" y="360"
+    font-family="'Cormorant Garamond', Georgia, serif"
+    font-style="italic"
+    font-weight="500"
+    font-size="112"
+    fill="#f5f2ec"
+    letter-spacing="-2"
+  >Anthony Grecu</text>
+
+  <!-- Tagline -->
+  <text
+    x="80" y="424"
+    font-family="'Cormorant Garamond', Georgia, serif"
+    font-style="italic"
+    font-size="30"
+    fill="#44403c"
+  >Crafting thoughtful software for the modern enterprise.</text>
+
+  <!-- URL bottom right -->
+  <text
+    x="1120" y="570"
+    font-family="'IBM Plex Mono', 'Courier New', monospace"
+    font-size="14"
+    fill="#57534e"
+    text-anchor="end"
+    letter-spacing="1"
+  >grecua.com</text>
+</svg>
